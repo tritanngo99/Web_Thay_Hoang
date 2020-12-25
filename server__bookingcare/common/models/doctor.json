@@ -1,0 +1,98 @@
+{
+  "name": "doctor",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+
+    "location": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number",
+      "dataType": "decimal",
+      "precision": 10,
+      "scale": 3
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "minute": {
+      "type": "number"
+    },
+    "time_start_morning": {
+      "type": "string"
+    },
+    "time_end_morning": {
+      "type": "string"
+    },
+    "time_start_afternoon": {
+      "type": "string"
+    },
+    "time_end_afternoon": {
+      "type": "string"
+    },
+    "check": {
+      "type": "boolean"
+    },
+    "HH": {
+      "type": "string"
+    },
+    "HV": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "specialist": {
+      "type": "belongsTo",
+      "model": "specialist",
+      "foreignKey": ""
+    },
+    "bookings": {
+      "type": "hasMany",
+      "model": "booking",
+      "foreignKey": ""
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
+    "dayOffs": {
+      "type": "hasMany",
+      "model": "day_off",
+      "foreignKey": ""
+    },
+    "notify-doctors": {
+      "type": "hasMany",
+      "model": "notify-doctor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

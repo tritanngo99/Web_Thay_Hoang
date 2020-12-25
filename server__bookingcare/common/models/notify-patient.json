@@ -1,0 +1,32 @@
+{
+  "name": "notify_patient",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "isRead": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "patient": {
+      "type": "belongsTo",
+      "model": "patient",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

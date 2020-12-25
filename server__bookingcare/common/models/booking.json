@@ -1,0 +1,64 @@
+{
+  "name": "booking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "old": {
+      "type": "number"
+    },
+    "anamnesis": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time_start": {
+      "type": "string"
+    },
+    "time_end": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "follow_up_examination": {
+      "type": "boolean"
+    },
+    "re_examination_time": {
+      "type": "number"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "times": {
+      "type": "number"
+    }
+
+
+  },
+  "validations": [],
+  "relations": {
+    "patient": {
+      "type": "belongsTo",
+      "model": "patient",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

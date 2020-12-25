@@ -1,0 +1,29 @@
+{
+  "name": "day_off",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time_start": {
+      "type": "string"
+    },
+    "time_end": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

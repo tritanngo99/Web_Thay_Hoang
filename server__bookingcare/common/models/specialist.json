@@ -1,0 +1,29 @@
+{
+  "name": "specialist",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "doctors": {
+      "type": "hasMany",
+      "model": "doctor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

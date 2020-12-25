@@ -1,0 +1,61 @@
+{
+  "name": "patient",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "location_detail": {
+      "type": "string"
+    },
+    "old": {
+      "type": "number"
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bookings": {
+      "type": "hasMany",
+      "model": "booking",
+      "foreignKey": ""
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
+    "notify-patients": {
+      "type": "hasMany",
+      "model": "notify-patient",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

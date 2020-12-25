@@ -1,0 +1,19 @@
+{
+  "bookingcare": {
+    "host": "38.17.53.119",
+    "port": 17154,
+    "url": "",
+    "database": "bookingcare",
+    "user": "xuantien",
+    "password": "xuantien98",
+    "name": "bookingcare",
+    "connector": "mysql"
+  },
+  "storageIMG": {
+    "name": "storageIMG",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./files",
+    "maxFileSize": "10485760"
+  }
+}

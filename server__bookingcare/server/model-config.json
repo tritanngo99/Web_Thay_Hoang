@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "bookingcare",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "bookingcare",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "bookingcare",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "bookingcare",
+    "public": false
+  },
+  "doctor": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "patient": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "admin": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "specialist": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "booking": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "district": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "province": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "upload": {
+    "dataSource": "storageIMG",
+    "public": true
+  },
+  "support": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "day_off": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "notify_doctor": {
+    "dataSource": "bookingcare",
+    "public": true
+  },
+  "notify_patient": {
+    "dataSource": "bookingcare",
+    "public": true
+  }
+}

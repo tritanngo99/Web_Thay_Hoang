@@ -1,0 +1,29 @@
+{
+  "name": "notify_doctor",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "isRead": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "doctor": {
+      "type": "belongsTo",
+      "model": "doctor",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
